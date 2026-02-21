@@ -8,6 +8,8 @@ echo "Installing dotfiles from $DOTFILES_DIR"
 mkdir -p ~/.claude
 ln -sf "$DOTFILES_DIR/.claude/settings.json" ~/.claude/settings.json
 echo "  Linked .claude/settings.json"
+ln -sf "$DOTFILES_DIR/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
+echo "  Linked .claude/CLAUDE.md"
 
 # Git
 ln -sf "$DOTFILES_DIR/.gitconfig" ~/.gitconfig

@@ -11,6 +11,10 @@ echo "  Linked .claude/settings.json"
 ln -sf "$DOTFILES_DIR/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
 echo "  Linked .claude/CLAUDE.md"
 
+# Zsh
+ln -sf "$DOTFILES_DIR/.zshrc" ~/.zshrc
+echo "  Linked .zshrc"
+
 # Git
 ln -sf "$DOTFILES_DIR/.gitconfig" ~/.gitconfig
 echo "  Linked .gitconfig"

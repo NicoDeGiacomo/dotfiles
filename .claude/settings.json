@@ -78,7 +78,16 @@
       "Bash(glab repo view*)",
       "Bash(glab ci view*)",
       "Bash(glab ci list*)",
-      "Bash(glab api *)"
+      "Bash(glab api *)",
+      "Bash(go test*)",
+      "Bash(go build*)",
+      "Bash(go vet*)",
+      "Bash(go version*)",
+      "Bash(go list*)",
+      "Bash(go mod tidy*)",
+      "Bash(go env*)",
+      "Bash(golangci-lint run*)",
+      "Bash(staticcheck*)"
     ]
   },
   "attribution": {

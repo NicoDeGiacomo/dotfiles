@@ -91,7 +91,16 @@
       "Bash(go mod tidy*)",
       "Bash(go env*)",
       "Bash(golangci-lint run*)",
-      "Bash(staticcheck*)"
+      "Bash(staticcheck*)",
+      "WebFetch(domain:developer-portal.prd.kavak.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.github.com)",
+      "WebFetch(domain:gitlab.com)",
+      "WebFetch(domain:docs.gitlab.com)",
+      "WebFetch(domain:docs.python.org)",
+      "WebFetch(domain:python.org)",
+      "WebFetch(domain:go.dev)",
+      "WebFetch(domain:pkg.go.dev)"
     ]
   },
   "model": "opus[1m]",

@@ -1,0 +1,4 @@
+# Claude Code global skills
+# Each line is passed as arguments to: npx skills add <args> -g -a claude-code -y
+vercel-labs/agent-skills --all
+https://github.com/vercel-labs/skills --skill find-skills

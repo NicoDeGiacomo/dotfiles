@@ -8,8 +8,10 @@ echo "Installing dotfiles from $DOTFILES_DIR"
 mkdir -p ~/.claude
 ln -sf "$DOTFILES_DIR/.claude/settings.json" ~/.claude/settings.json
 echo "  Linked .claude/settings.json"
-ln -sf "$DOTFILES_DIR/.claude/CLAUDE.md" ~/.claude/CLAUDE.md
-echo "  Linked .claude/CLAUDE.md"
+ln -sf "$DOTFILES_DIR/.claude/statusline-command.sh" ~/.claude/statusline-command.sh
+echo "  Linked .claude/statusline-command.sh"
+ln -sf "$DOTFILES_DIR/claude-global-CLAUDE.md" ~/.claude/CLAUDE.md
+echo "  Linked .claude/CLAUDE.md (global)"
 
 # Zsh
 ln -sf "$DOTFILES_DIR/.zshrc" ~/.zshrc
@@ -32,5 +34,15 @@ EOF
 else
   echo "  .gitconfig-work already exists, skipping"
 fi
+
+# Claude Code Skills
+echo ""
+echo "Installing Claude Code skills..."
+while IFS= read -r line || [ -n "$line" ]; do
+  [[ -z "$line" || "$line" == \#* ]] && continue
+  echo "  Installing: $line"
+  npx skills add $line -g -a claude-code -y
+done < "$DOTFILES_DIR/.claude/skills.txt"
+echo "  Done installing skills"
 
 echo "Done."

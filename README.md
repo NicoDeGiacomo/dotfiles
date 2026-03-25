@@ -14,6 +14,12 @@ Custom status line showing directory, git branch (green = clean, yellow = dirty)
 
 **File:** [`.claude/settings.json`](.claude/settings.json)
 
+### Zsh
+
+Minimal `.zshrc` with a custom prompt and shared PATH. Machine-specific config (tokens, SDK inits, aliases) goes in `~/.zshrc.local`, which is sourced automatically but not tracked in git.
+
+**File:** [`.zshrc`](.zshrc)
+
 ## Setup
 
 Clone and run the install script:
